@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Judul Topik Bantuan -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cara Daftar Akun"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Konten Topik Bantuan (Awalnya Tersembunyi) -->
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        android:id="@+id/expandableTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konten tentang cara daftar akun..."
+            android:textSize="16sp"/>
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+</LinearLayout>
